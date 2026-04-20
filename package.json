@@ -1,13 +1,14 @@
 {
-  "name": "none",
+  "name": "jetbrains-project-scripts",
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "main": "dist/index.js",
+  "main": "",
   "scripts": {
-    "start": "tsx ./src/index.ts",
+    "git-pull": "tsx ./src/git-pull/git-pull.ts",
+    "npm-install": "tsx ./src/npm-install/npm-install.ts",
     "build": "tsc",
-    "lint": "eslint src/**/*",
+    "lint": "eslint src/**/* --fix",
     "test": "vitest ./src"
   },
   "author": "Mike DiDomizio",
